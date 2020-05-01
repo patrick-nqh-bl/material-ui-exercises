@@ -8,14 +8,14 @@
 2. Function awesome:
 * Matched array follow object and then fixed as array with 2 element
 
-getExercisesByMuscles() {
-  return Object.entries(this.state.exercises.reduce((exercises, exercise) => {
-    const { muscles } = exercise;
-    exercises[muscles] = exercises[muscles]
-      ? [...exercises[muscles], exercise]
-      : [exercise]
+    getExercisesByMuscles() {
+      return Object.entries(this.state.exercises.reduce((exercises, exercise) => {
+        const { muscles } = exercise;
+        exercises[muscles] = exercises[muscles]
+          ? [...exercises[muscles], exercise]
+          : [exercise]
 
-    return exercises
-  }, {})
-  )
-} 
+        return exercises
+      }, {})
+      )
+    } 
